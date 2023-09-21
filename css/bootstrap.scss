@@ -1,0 +1,36 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+$custom-colors: (
+        "primary": #f0f,
+        "borderColor": #F6F5F4
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$tablet: "screen and (min width: 768px)";
+$computer: "screen and (min width: 768px)";
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html{
+  scroll-behavior: smooth;
+}
+
+* { /* Gælder alt på hele siden */
+  box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+  font-family: "Louis George Cafe", sans-serif;
+}
+
+body{
+  background-color: #f1f3f4;
+
+}
+
+a{ text-decoration: none; color:#3a3a3c; }
+a:visited { text-decoration: none; color:#3a3a3c; }
+a:hover { text-decoration: none; color: #8b8b8d; }
+a:hover, a:active { text-decoration: none; color: #aeaeb1 }
+
+
